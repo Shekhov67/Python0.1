@@ -32,5 +32,6 @@ class Prospect(House):
         self.prospect = prospect
 
 PrHouse = Prospect('Lenina', 9)
+
 print(PrHouse.prospect)
 print(PrHouse.number)
