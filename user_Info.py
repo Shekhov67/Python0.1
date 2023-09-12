@@ -13,7 +13,7 @@ class User():
 
 user1 = User('Andy', 'Jonson', 23, '12.05.2000')
 
-user1.infoUser()
+#user1.infoUser()
 
 
 class UserAnketa(User):
@@ -21,8 +21,11 @@ class UserAnketa(User):
     def __init__(self, work, name, surname, age, dateOfBirth):
         super().__init__(name, surname, age, dateOfBirth)
         self.work = work
+    def infoWork(self):
+        print('Work: ' + self.work)
 
 
 user2 = UserAnketa('IT', 'Bob', 'Gogivon', 26, '21.06.2003')
-print(user2.work)
+
 user2.infoUser()
+user2.infoWork()
