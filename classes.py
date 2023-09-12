@@ -14,17 +14,6 @@ class House():
         '''Возраст дома'''
         self.age += year
 
-
-
-'''House1 = House("Moskovskia", 27)
-House2 = House("Moskovskia", 28)
-
-House1.build()
-House2.build()
-House1.age_of_house(5)
-print(House1.age)
-print(House1.street)'''
-
 class Prospect(House):
     def __init__(self, prospect, number):
         super().__init__(self, number)
