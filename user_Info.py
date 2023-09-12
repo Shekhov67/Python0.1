@@ -6,6 +6,7 @@ class Data():
         # '''Конструктор'''
         self.nameUser = nameUser
         self.surname = surname
+        self.age = 0
 
     def infoUser(self):
         # '''Метод'''
@@ -29,7 +30,7 @@ class Lang(Data):
         print(self.lang + '\n' + str(self.nameUser))
 
 
-User3 = Lang('Russ', 'Jack', 'Glinka')
+User3 = Lang('Russ', 'Jack', 'Jenkinsom')
 
 # print(User3.infoLang())
 print(User3.nameUser)
