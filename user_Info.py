@@ -1,38 +1,28 @@
-class Data(object):
-    '''Информация о юзере'''
+class User():
+    '''Information of user'''
 
-    def __init__(self, nameUser, surname):
-
-        self.nameUser = nameUser
+    def __init__(self, name, surname, age, dateOfBirth):
+        self.name = name
         self.surname = surname
+        self.age = age
+        self.dateOfBirth = dateOfBirth
 
     def infoUser(self):
-        # '''Метод'''
-        print('Name: ' + self.nameUser + '\n' + 'Surname: ' + self.surname)
+        print('Name: ' + self.name + '\n' + 'Surname: ' + self.surname + '\n' + 'Age: ' + str(
+            self.age) + '\n' + 'Birthday: ' + self.dateOfBirth)
+
+user1 = User('Andy', 'Jonson', 23, '12.05.2000')
+
+user1.infoUser()
 
 
-'''User1 = Data('Andy', 'Jonson')
-User2 = Data('Bobi', 'Ivanov')
-User1.infoUser()
-User2.infoUser()'''
+class UserAnketa(User):
+
+    def __init__(self, work, name, surname, age, dateOfBirth):
+        super().__init__(name, surname, age, dateOfBirth)
+        self.work = work
 
 
-class Lang(Data):
-    # Info to lang
-    def __init__(self, lang, nameUser):
-        super().__init__(self, nameUser)
-        self.lang = lang
-
-    def infoLang(self):
-        # Info to lang
-        print(self.nameUser)
-
-
-User3 = Lang('Russ', 'Jack')
-
-print(User3.nameUser)
-# print(User3.infoLang())
-# print(User3.infoLang())
-# User4 = LangUser('USA', 'Indian')
-# print(str(User4.nameUser))
-# print(User4.nameUser)
+user2 = UserAnketa('IT', 'Bob', 'Gogivon', 26, '21.06.2003')
+print(user2.work)
+user2.infoUser()
