@@ -1,12 +1,10 @@
-
-class Data():
-    # '''Information of user'''
+class Data(object):
+    '''Информация о юзере'''
 
     def __init__(self, nameUser, surname):
-        # '''Конструктор'''
+
         self.nameUser = nameUser
         self.surname = surname
-        self.age = 0
 
     def infoUser(self):
         # '''Метод'''
@@ -21,19 +19,19 @@ User2.infoUser()'''
 
 class Lang(Data):
     # Info to lang
-    def __init__(self, lang, nameUser, surname):
-        super().__init__(nameUser, surname)
+    def __init__(self, lang, nameUser):
+        super().__init__(self, nameUser)
         self.lang = lang
 
     def infoLang(self):
         # Info to lang
-        print(self.lang + '\n' + str(self.nameUser))
+        print(self.nameUser)
 
 
-User3 = Lang('Russ', 'Jack', 'Jenkinsom')
+User3 = Lang('Russ', 'Jack')
 
-# print(User3.infoLang())
 print(User3.nameUser)
+# print(User3.infoLang())
 # print(User3.infoLang())
 # User4 = LangUser('USA', 'Indian')
 # print(str(User4.nameUser))
