@@ -1,9 +1,10 @@
 class House():
     '''Описание дома'''
-    def __init__(self, street, number):
+    def __init__(self, number, street):
         '''Свойства дома'''
-        self.street = street
         self.number = number
+        self.street = street
+
         self.age = 0
 
     def build(self):
@@ -15,14 +16,14 @@ class House():
         self.age += year
 
 class Prospect(House):
-    def __init__(self, prospect, number):
-        super().__init__(self, number)
+    def __init__(self, prospect, street):
+        super().__init__(self, street)
         self.prospect = prospect
     def info(self):
-        print(self.number)
+        print(self.street)
 
-PrHouse = Prospect('Lenina', 9)
+PrHouse = Prospect('Lenina', 'ss')
 
 print(PrHouse.prospect)
-print(PrHouse.number)
+print(PrHouse.street)
 PrHouse.info()
