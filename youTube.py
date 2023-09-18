@@ -5,9 +5,9 @@ while True:
     forward(10)
     left(10)
 
-exitonclick()'''
-
-''''Убрать фон
+exitonclick()
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Убрать фон
 установщик pip install rembg
 
 '''
